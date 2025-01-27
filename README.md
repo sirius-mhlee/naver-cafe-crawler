@@ -38,9 +38,10 @@ cafe_id = 0
 ## Running Prepare.py
 
 Specify the menu ID of the NAVER Cafe and the number of pages to collect.  
+`(Menu ID, Number of pages)`  
+
 > [!NOTE]  
-> For example, if you enter `15`, it will crawl from page 1 to page 15.   
-> `(Menu ID, Number of pages)`
+> For example, if you enter 15 as the number of pages, it will crawl from page 1 to page 15.   
 
 ```python
 menu_id_page = [
