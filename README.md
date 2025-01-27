@@ -38,8 +38,9 @@ cafe_id = 0
 ## Running Prepare.py
 
 Specify the menu ID of the NAVER Cafe and the number of pages to collect.  
+> [!NOTE]  
 > For example, if you enter `15`, it will crawl from page 1 to page 15.   
-> `(Menu ID, Page number to collect)`
+> `(Menu ID, Number of pages)`
 
 ```python
 menu_id_page = [
@@ -63,11 +64,12 @@ file_name_list = [
 ]
 ```
 
-Run `Crawling.py` to perform crawling.  
-It will save:
-- Post contents in `[Menu ID]_content.csv`
-- Comments in `[Menu ID]_comment.csv`
+Run `Crawling.py` to perform crawling.
 
 ```python
 python3 Crawling.py
 ```
+
+It will save:
+- Post contents in `[Menu ID]_content.csv`
+- Comments in `[Menu ID]_comment.csv`
