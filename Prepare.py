@@ -11,7 +11,7 @@ driver = Util.init_driver()
 Util.login(driver)
 
 menu_id_page = [
-    (243, 382), #
+    (243, 382),
     (25, 623),
     (314, 6),
     (202, 5),

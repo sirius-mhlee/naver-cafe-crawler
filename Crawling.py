@@ -17,7 +17,7 @@ driver = Util.init_driver()
 Util.login(driver)
 
 file_name_list = [
-    ('243_link.csv'), #
+    ('243_link.csv'),
     ('25_link.csv'),
     ('314_link.csv'),
     ('202_link.csv'),
@@ -59,9 +59,9 @@ for file_name in file_name_list:
         backup_count += 1
 
         post_id = df_link['post_id'][idx]
-        
+
         need_re_login = False
-        
+
         title_text = None
 
         try:
@@ -85,7 +85,7 @@ for file_name in file_name_list:
                 continue
             except:
                 need_re_login = True
-            
+
         if need_re_login:
             time.sleep(Config.re_login_wait_time)
 
